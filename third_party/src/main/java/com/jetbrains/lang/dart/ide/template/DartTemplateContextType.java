@@ -32,6 +32,7 @@ public abstract class DartTemplateContextType extends TemplateContextType {
     super(id, presentableName, baseContextType);
   }
 
+  @Override
   public boolean isInContext(@NotNull TemplateActionContext templateActionContext) {
     PsiFile file = templateActionContext.getFile();
     if (file.getLanguage() instanceof DartLanguage) {
